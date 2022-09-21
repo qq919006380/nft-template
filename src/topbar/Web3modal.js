@@ -1,21 +1,7 @@
 import { useEffect, useState } from "react";
-import { providers } from "ethers";
-import WalletConnect from "@walletconnect/web3-provider";
+import { ethers } from 'ethers';
 import Web3Modal from "web3modal";
 import { providerOptions } from "../utils/providerOptions";
-console.log(providerOptions)
-// const providerOptions = {
-//     walletconnect: {
-//         package: WalletConnect,
-//         options: {
-//             infuraId: '',//以太坊连接必填
-//             // rpc: {
-//             //   56: 'https://bsc-dataseed1.binance.org',
-//             // },
-//             // network: 56,
-//         },
-//     },
-// };
 const web3Modal = new Web3Modal({
   network: 'mainnet',
   cacheProvider: true,
@@ -23,13 +9,14 @@ const web3Modal = new Web3Modal({
 });
 
 const connectWallet = async () => {
-  console.log(2);
   try {
+    // await web3Modal.clearCachedProvider();
     const provider = await web3Modal.connect();
     const library = new ethers.providers.Web3Provider(provider);
-     
+    
+
   } catch (error) {
-    console.log(0);
+    console.error(error);
   }
 };
 export default function App() {
