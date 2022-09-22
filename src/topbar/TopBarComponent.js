@@ -2,7 +2,6 @@ import {Store} from '../Store';
 import './topbar.css';
 import {useState,useEffect } from 'react';
 import MainFeatureTabsComponent from './MainFeatureTabsComponent'
-import Xxx from './Web3modal'
  const ToolbarComponent = () => {
      //组件内部定义入口按钮展示文案
     const [text, setText] = useState(Store.currentAccount.get() === "" ? "连接钱包" : Store.currentAccount.get());
@@ -20,7 +19,7 @@ import Xxx from './Web3modal'
     return (
         <div className='toolbar'>
             <MainFeatureTabsComponent/>
-            <Xxx/>
+            
             <div className='connect-wallet' > 
                 <h2 className='connect-wallet-text' 
                     onClick={() => { onclick_wallet() }}> {text} </h2>

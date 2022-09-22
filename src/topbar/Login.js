@@ -21,6 +21,6 @@ const connectWallet = async () => {
 };
 export default function App() {
   return (
-    <div onClick={connectWallet}>连接钱包xx</div>
+    <div className=" font-bold cursor-pointer hover:opacity-90" onClick={connectWallet}>连接钱包</div>
   )
 }
