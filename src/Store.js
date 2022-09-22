@@ -2,8 +2,7 @@ import { observable } from "mobx";
 import { getConnectAccount } from "./utils/wallet_utils.js";
 
 const help = () => {
-    // 钱包选择页面板是否展示状态
-    const wallet_is_show = observable.box(false);
+     
     // 当前连接的钱包地址，未连接则存储""
     const currentAccount = observable.box("");
     //连接钱包地址发生变化时的处理，更新存储状态
@@ -36,7 +35,7 @@ const help = () => {
         });
     }
 
-    return {wallet_is_show, registerAccountChange,currentAccount};
+    return { registerAccountChange,currentAccount};
     
 };
 export const Store = help();
