@@ -38,7 +38,7 @@ const MintPageComponent = () => {
     return (
         <div className='mintpage'>
             <div className='mint-info'>当前mint进度 {"" + totalSupply} / {"" + maxSupply}</div>
-            <div className='mint-btn' onClick={mintClick}>一键mint</div>
+            <div className='mt-16 font-coiny uppercase inline-flex items-center px-6 oy-2 text-sm sm:text-2xl md:text-3xl font-medium text-center rounded text-rose-500 hover:bg-rose-600 hover:text-white' onClick={mintClick}>一键mint</div>
         </div>
     );
 }

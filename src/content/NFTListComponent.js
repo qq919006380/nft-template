@@ -17,9 +17,9 @@ function NFTListComponent() {
     }, []);
 
     const items = metadatalist.map((metadata, index) => 
-        <div className='nft-list-item' key={index}>
-            <img className='nft-list-item-img'  src={ipfsToHttp(metadata.image)} />
-            <h4 className='nft-list-item-name'> {metadata.name} </h4>
+        <div   key={index}>
+            <img className=' w-52'  src={ipfsToHttp(metadata.image)} />
+            <h4  > {metadata.name} </h4>
         </div>
     );
     console.log("items is" + items);

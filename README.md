@@ -70,3 +70,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 # nft-web3
 [web3modal-demo](https://codesandbox.io/s/j43b10)
+[其他mint-template](https://preview.themeforest.net/item/scott-nft-minting-and-collection-landing-page-html5-template/full_screen_preview/39026577?_ga=2.70184276.532605123.1663897691-355747111.1660726063)
+[mint-template](https://harnishdesign.net/demo/html/scott/index.html#about)
