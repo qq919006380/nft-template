@@ -1,5 +1,4 @@
-import './content.css';
-import { getMetaDataList, ipfsToHttp } from "../utils/contractUtils";
+import { getMetaDataList, ipfsToHttp } from "../../utils/contractUtils";
 import { useEffect, useState } from 'react';
 
 function NFTListComponent() {

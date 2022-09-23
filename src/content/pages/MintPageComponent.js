@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
-import { Store } from '../Store';
-import { getMintInfo, mint } from '../utils/contractUtils';
-import './content.css';
+import { Store } from '../../Store';
+import { getMintInfo, mint } from '../../utils/contractUtils';
 
 const MintPageComponent = () => {
     const [totalSupply, setTotalSupply] = useState(0);
