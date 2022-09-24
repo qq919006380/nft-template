@@ -1,4 +1,4 @@
-import MainPageComponent from './pages/MainPageComponent'
+import HomePageComponent from './pages/HomePageComponent'
 import NFTListComponent from './pages/NFTListComponent'
 
 
@@ -13,7 +13,7 @@ const ContentComponent = () => {
     });
     return (
         <div  >
-            {(route != "/mint" && route != "/list") && <MainPageComponent />}
+            {(route != "/mint" && route != "/list") && <HomePageComponent />}
             {(route == "/mint") && <MintPageComponent />}
             {(route == "/list") && <NFTListComponent />}
         </div>

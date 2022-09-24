@@ -1,0 +1,16 @@
+.layer1 {
+    top: -50px !important;
+    max-width: 260px;
+}
+
+.layer2 {
+    max-width: 270px;
+    left: -30% !important;
+    top: 50% !important;
+}
+
+.layer3 {
+    left: 50% !important;
+    top: 50% !important;
+    
+}
