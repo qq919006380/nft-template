@@ -1,7 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+:root {
+  scroll-behavior: smooth;
+}
 body {
   background-color: #292e34 !important;
   background-image:url('./assets/bg.png');
